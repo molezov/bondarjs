@@ -1,0 +1,20 @@
+{
+  "name": "bondarjs-monorepo",
+  "private": true,
+  "packageManager": "yarn@4.4.1",
+  "engines": {
+    "npm": "use yarn instead",
+    "yarn": "4.4.1"
+  },
+  "workspaces": [
+    "packages/create-bondar",
+    "packages/create-bondar/templates/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "@create-bondar": "yarn workspace create-bondar"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  }
+}
