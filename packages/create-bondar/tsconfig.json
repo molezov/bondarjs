@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es2020",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "module": "es2022",
+    "target": "es2022",
     "outDir": "./dist",
-    "sourceMap": true,
-    "strict": true
+    "sourceMap": false,
+    "strict": true,
+    "skipLibCheck": true
   },
-  "include": ["src"]
+  "include": ["src/*.ts", "./package.json"],
+  "exclude": ["dist", "**/node_modules/**", "__tests__"]
 }
